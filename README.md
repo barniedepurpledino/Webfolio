@@ -1,0 +1,3 @@
+- Welcome to this repository. 
+- This serves as a webpage for my portfolio written with HTML and CSS. 
+- You may head to [this webpage](https://github.io).

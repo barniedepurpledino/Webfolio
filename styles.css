@@ -1,0 +1,129 @@
+/* ===== Colour palette ===== */
+:root {
+  --background: #bde0fe;
+  --surface: #ffffff;
+  --text: #003566;
+  --text-soft: #03045e;
+  --accent: #001d3d;
+  --accent-soft: #5c677d;
+  --border: #003566;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.7;
+  padding: 2rem 1.25rem;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-size: 2.2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--accent);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--accent-soft);
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 1.25rem 0 0.5rem;
+}
+
+/* ===== Text ===== */
+p {
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--text-soft);
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #ff00ba; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+  margin: 0 0 1rem 1.25rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== Collapsible sections ===== */
+details {
+  padding: 0.75rem 0;
+}
+
+summary {
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+summary:hover {
+  color: var(--text);
+}
+
+details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+details p {
+  color: var(--text-soft);
+}
+
+/* ===== Contact links ===== */
+.contact a {
+  font-weight: 600;
+  
+}
+
+/* ===== Responsive layout ===== */
+@media (min-width: 700px) {
+  body {
+    padding: 3rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+}
